@@ -200,6 +200,9 @@ function createAndFilterProductCards(products,category) {
             container.appendChild(colDiv);
         }
     });
+    if(container.innerHTML == ''){
+        container.innerHTML="Nenhum produto encontrado."
+    }
 }
 
 // Chame a função após o carregamento do DOM
