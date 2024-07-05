@@ -201,7 +201,7 @@ function createAndFilterProductCards(products,category) {
         }
     });
     if(container.innerHTML == ''){
-        container.innerHTML="Nenhum produto encontrado.";
+        container.innerHTML="Nenhum produto encontrado. <br>";
     }
 }
 
