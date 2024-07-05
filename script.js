@@ -82,7 +82,7 @@ function renderCart(){
         });
         mensagem.replace(' ','%20');
         
-        link_comprar.href='https://wa.me/5512981424750?text='+mensagem;
+        link_comprar.href='https://wa.me/5512981621179?text='+mensagem;
         link_comprar.className='btn btn-success comprar_btn';
         link_comprar.target='_blank';
         link_comprar.style.display='block';
@@ -201,7 +201,7 @@ function createAndFilterProductCards(products,category) {
         }
     });
     if(container.innerHTML == ''){
-        container.innerHTML="Nenhum produto encontrado. <br>";
+        container.innerHTML="Nenhum produto encontrado.";
     }
 }
 
