@@ -1,0 +1,61 @@
+html, body{overflow-x:hidden;}
+.principal {
+    background-color: rgb(244,194,194, 30%);
+    display: block;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;}
+
+
+    .allCards {
+        display: flex;
+        flex-wrap: wrap; /* Permite que os itens quebrem para uma nova linha se necessário */
+        justify-content: center; /* Centraliza os itens horizontalmente */
+        gap: 20px; /* Espaçamento entre os itens */
+    }
+
+    nav{
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.523);
+    }
+
+ul{
+    list-style: none;
+    margin: 0px;
+    display: block;
+
+}
+.offcanvas-custom-width {
+    width: auto !important;
+    min-width: 20%; /* Adjust this value to your desired width */
+    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+}
+
+    
+div h2 {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.btn {
+    transition: background-color 0.5s ease;
+    text-align: center;
+    border-color: black;
+    color: black;
+    background-color: white;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+footer{
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.523);
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

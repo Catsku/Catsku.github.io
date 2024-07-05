@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicat</title>
+    <link rel="icon" href="icones/d_maiusculo.png">
+    <script lang="javascript" src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Delicat</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" onclick="createAndFilterProductCards(products,'all')">Todos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="createAndFilterProductCards(products,'Corset')">Corsets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="createAndFilterProductCards(products,'Saia')">Saias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="createAndFilterProductCards(products,'Blusa')">Blusas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="createAndFilterProductCards(products,'Vestido')">Vestidos</a>
+              </li>
+            </ul>
+          </div>
+          <button class="btn btn-primary position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" onmouseover="carrinho_branco()" onmouseleave="carrinho_preto()">
+            <img src="icones/carrinho-preto.png" style="width: 20px; height: auto;"  id="carrinho">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cart-count">
+              0
+            </span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="offcanvas offcanvas-start offcanvas-custom-width" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="staticBackdropLabel">Carrinho de Compras</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div id="cart">
+            <ul id="cart-list"></ul>
+            <div id="total">
+              <strong>Total: R$ <span id="total-value">0.00</span></strong>
+            </div>
+            <div id="comprar">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <main>
+        <div class="principal">
+            <h2 id="categoria" style="margin-top: 60px;">Todos os Produtos</h2>
+            <br>
+            <div class="row allCards">           
+                
+            </div>
+        </div>
+    </main>
+  <footer class="bg-light text-center text-lg-start" style="padding: 10px;">
+    <div class="container  pt-4 text-center" style=" display:flexbox; width: 100%;padding-bottom: 10px;">
+      <a href="https://wa.me/5512981424750?text=Olá%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos." target="_blank" style="margin-right: 30px; ">
+        <img src="icones/whatsapp_logo.png" alt="WhatsApp" style="width: 30px; height: auto;"> +55 12 981621179 
+      </a>
+      <a href="https://www.instagram.com/omundoecriativo/" target="_blank">
+        <img src="icones/instagram_logo.png" alt="Instagram" style="width: 28px; height: auto;"> @omundoecriativo
+      </a>
+    </div>
+    <div class="text-center"> 
+      <span>&copy; 2024 Delicat. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
